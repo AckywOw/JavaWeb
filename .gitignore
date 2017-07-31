@@ -31,7 +31,7 @@ Temporary Items
 
 # IntelliJ project files
 .idea
-*.iml
+#*.iml
 out
 gen### Java template
 # Compiled class file
