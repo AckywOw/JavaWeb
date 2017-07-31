@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://sas.co"
+       xsi:schemaLocation="http://sas.co books.xsd">
+
+
+    <book id="1">
+        <name>asda</name>
+        <author></author>
+        <price></price>
+    </book>
+
+
+    <book id="2" haha="a3">
+        <name>dsa</name>
+        <author></author>
+        <price></price>
+    </book>
+
+</books>

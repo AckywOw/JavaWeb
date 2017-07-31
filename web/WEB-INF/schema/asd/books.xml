@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aa:books xmlns:aa="http://www.itheima.cn/book"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.itheima.cn/book books.xsd">
+    <book>
+        <name>thinking in java</name>
+        <author>tom</author>
+    </book>
+
+    <book lang="zh">
+        <name>thinking in c++</name>
+        <author>james</author>
+    </book>
+</aa:books>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://sas.co"
+        elementFormDefault="qualified"
+        attributeFormDefault="unqualified"
+>
+    <element name='books'>
+        <complexType>
+            <sequence maxOccurs="2">
+                <element name='book'>
+                    <complexType>
+                        <sequence>
+                            <element name="name" type="string"/>
+                            <element name="author" type="string"/>
+                            <element name="price" type="string"/>
+
+                        </sequence>
+                        <attribute name="id" type="integer" use="required"/>
+                        <attribute name="haha" type="string"/>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
