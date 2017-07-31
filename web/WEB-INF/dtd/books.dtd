@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!ENTITY % content "(name|bookname),author,price">
+
+        <!ELEMENT books (book*)>
+        <!ELEMENT book (%content;)>
+
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT author (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>
+        <!ELEMENT bookname (#PCDATA)>
+
+        <!ATTLIST book
+                id CDATA #FIXED "a1"
+                haha CDATA #REQUIRED
+                hehe CDATA #IMPLIED
+                >
+
+        <!--现在的浏览器不支持外部引用实体-->
+        <!ENTITY ads "你好">
