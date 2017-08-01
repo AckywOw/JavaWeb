@@ -1,20 +1,17 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns="http://sas.co"
+<?xml version="1.0" encoding="utf-8"?>
+
+<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://sas.co"
        xsi:schemaLocation="http://sas.co books.xsd">
-
-
-    <book id="1">
-        <name>asda</name>
-        <author></author>
-        <price></price>
-    </book>
-
-
-    <book id="2" haha="a3">
-        <name>dsa</name>
-        <author></author>
-        <price></price>
-    </book>
-
+  <book id="1" lang="0.01">
+    <name>asda</name>
+    <author/>
+    <price>33</price>
+    <type>xxxx</type>
+  </book>
+  <book id="2" haha="a3" lang="1.01">
+    <name>dsa</name>
+    <author>liubei</author>
+    <price>100</price>
+    <type>xxxx</type>
+  </book>
 </books>

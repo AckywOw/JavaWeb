@@ -12,10 +12,12 @@
                         <sequence>
                             <element name="name" type="string"/>
                             <element name="author" type="string"/>
-                            <element name="price" type="string"/>
+                            <element name="price" type="integer"/>
+                            <element name="type" type="string"/>
 
                         </sequence>
                         <attribute name="id" type="integer" use="required"/>
+                        <attribute name="lang" type="double" use="required"/>
                         <attribute name="haha" type="string"/>
                     </complexType>
                 </element>
