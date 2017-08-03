@@ -65,10 +65,11 @@ public class MyServlet extends HttpServlet {
         String inin = servletContext.getRealPath("/WEB-INF/classes/inin.txt");
         readFile(inin);
 
+        //利用classPath获取路径
         String inin2 = new File(getClass().getResource("/").getPath()).getParent() + "/in.txt";
         readFile(inin2);
 
-        String contextPath = servletContext.getContextPath();//获取当前web应用在服务器上的磁盘路径。
+        String contextPath = servletContext.getContextPath();//获取服务名字
         System.out.println("contextPath:" + contextPath);
         //6.完成分发请求 不常用
         RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/main/oin.html");
