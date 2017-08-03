@@ -3,10 +3,25 @@
          xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <context-param>
+        <param-name>context-param1</param-name>
+        <param-value>context-param1</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>context-param2</param-name>
+        <param-value>context-param2</param-value>
+    </context-param>
+
     <servlet>
         <servlet-name>MyServlet</servlet-name>
         <servlet-class>com.mingxxx.servlet.MyServlet</servlet-class>
-        <load-on-startup>2</load-on-startup>
+        <!--<load-on-startup>2</load-on-startup>-->
+        <!--有了load-on-startup属性不建议加init-param，因为会自动初始化，所以没必要, 会被ide标红-->
+        <init-param>
+            <param-name>init-param1</param-name>
+            <param-value>init-param1</param-value>
+        </init-param>
     </servlet>
 
     <servlet-mapping>
