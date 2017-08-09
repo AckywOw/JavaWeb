@@ -1,5 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script>
+    var second = 5;
+
+    function change() {
+        if (second == -1) {
+            return;
+        }
+        document.getElementById("s").innerHTML = second;
+        setTimeout("change()", 1000);
+        second = second - 1;
+    }
+</script>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,8 +20,28 @@
 <body>
 <div>
     <h1>asdasdas你好</h1>
-    <form action="/hello/main/in.html" method="post">
+    <form action="/hello/re" method="post">
         <input type="submit" value="send"/>
+    </form>
+    <br/>
+    <form action="/hello/req" method="post">
+        <input type="text" name="username"><br>
+        <input type="text" name="password"><br>
+        <input type="submit" value="send">
+    </form>
+    <br/>
+    <a href="/hello/req">ref</a>
+    <br/>
+    <form action="/hello/req" method="get">
+        USERNAME:<input type="text" name="username"><br>
+        PASSWORD:<input type="text" name="password"><br>
+        SEX:<input type="radio" name="sex" value="男">男&nbsp;&nbsp;<input type="radio" name="sex" value="女">女<br>
+        HOBBY:<input type="checkbox" name="hobby" value="吃">吃&nbsp;&nbsp;
+        <input type="checkbox" name="hobby" value="喝">喝&nbsp;&nbsp;
+        <input type="checkbox" name="hobby" value="玩">玩&nbsp;&nbsp;
+        <br>
+
+        <input type="submit" value="send">
     </form>
 </div>
 </body>
