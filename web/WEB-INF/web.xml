@@ -14,6 +14,10 @@
         <param-value>context-param2</param-value>
     </context-param>
 
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
     <servlet>
         <servlet-name>MyServlet</servlet-name>
         <servlet-class>com.mingxxx.servlet.MyServlet</servlet-class>
